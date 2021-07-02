@@ -18,7 +18,7 @@ async function dinoName(req, res, next) {
     defaultQuery.words = +words
     const output = await getDinoName(defaultQuery)
     if (output.error) return next(output.error)
-    return res.json(output)
+    return res.json(output.response)
   } catch (error) {
     next(error)
   }
@@ -37,7 +37,7 @@ async function dinoImage(req, res, next) {
     }
     defaultQuery.count = +count
     const output = await getDinoImage(defaultQuery)
-    return res.json(output)
+    return res.json(output.response)
   } catch (error) {
     next(error)
   }

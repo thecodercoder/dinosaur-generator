@@ -96,3 +96,136 @@
   label: 'node-js',
   timestamp: 'Fri, 02 Jul 2021 17:01:29 GMT'
 }
+{
+  service: 'nodejs-service',
+  level: 'error',
+  message: '[ERROR-HANDLER] {"message":"invalid or missing params","params":{}}',
+  label: 'node-js',
+  timestamp: 'Fri, 02 Jul 2021 17:14:21 GMT'
+}
+{
+  service: 'nodejs-service',
+  level: 'error',
+  message: '[ERROR-HANDLER] {"message":"invalid or missing params","params":{}}',
+  label: 'node-js',
+  timestamp: 'Fri, 02 Jul 2021 17:14:49 GMT'
+}
+{
+  service: 'nodejs-service',
+  level: 'error',
+  message: '[ERROR-HANDLER] {"message":"invalid or missing params","params":{}}',
+  label: 'node-js',
+  timestamp: 'Fri, 02 Jul 2021 17:14:49 GMT'
+}
+{
+  service: 'nodejs-service',
+  level: 'error',
+  message: '[ERROR-HANDLER] {"message":"invalid or missing params","params":{}}',
+  label: 'node-js',
+  timestamp: 'Fri, 02 Jul 2021 17:16:12 GMT'
+}
+{
+  service: 'nodejs-service',
+  level: 'error',
+  message: '[ERROR-HANDLER] {"message":"invalid or missing params","params":{}}',
+  label: 'node-js',
+  timestamp: 'Fri, 02 Jul 2021 17:16:12 GMT'
+}
+{
+  service: 'nodejs-service',
+  level: 'error',
+  message: '[ERROR-HANDLER] {"message":"invalid or missing params","params":{}}',
+  label: 'node-js',
+  timestamp: 'Fri, 02 Jul 2021 17:18:24 GMT'
+}
+{
+  service: 'nodejs-service',
+  level: 'error',
+  message: '[ERROR-HANDLER] {"message":"invalid or missing params","params":{}}',
+  label: 'node-js',
+  timestamp: 'Fri, 02 Jul 2021 17:19:12 GMT'
+}
+{
+  service: 'nodejs-service',
+  level: 'error',
+  message: '[ERROR-HANDLER] {"message":"invalid or missing params","params":{}}',
+  label: 'node-js',
+  timestamp: 'Fri, 02 Jul 2021 17:20:44 GMT'
+}
+{
+  service: 'nodejs-service',
+  level: 'error',
+  message: '[ERROR-HANDLER] {"message":"invalid or missing params","params":{}}',
+  label: 'node-js',
+  timestamp: 'Fri, 02 Jul 2021 17:20:44 GMT'
+}
+{
+  service: 'nodejs-service',
+  level: 'error',
+  message: '[ERROR-HANDLER] {"message":"invalid or missing params","params":{}}',
+  label: 'node-js',
+  timestamp: 'Fri, 02 Jul 2021 17:20:47 GMT'
+}
+{
+  service: 'nodejs-service',
+  level: 'error',
+  message: '[ERROR-HANDLER] {"message":"invalid or missing params","params":{}}',
+  label: 'node-js',
+  timestamp: 'Fri, 02 Jul 2021 17:20:47 GMT'
+}
+{
+  service: 'nodejs-service',
+  level: 'error',
+  message: '[ERROR-HANDLER] {"message":"invalid or missing params","params":{}}',
+  label: 'node-js',
+  timestamp: 'Fri, 02 Jul 2021 17:21:57 GMT'
+}
+{
+  service: 'nodejs-service',
+  level: 'error',
+  message: '[ERROR-HANDLER] {"message":"invalid or missing params","params":{}}',
+  label: 'node-js',
+  timestamp: 'Fri, 02 Jul 2021 17:21:57 GMT'
+}
+{
+  service: 'nodejs-service',
+  level: 'error',
+  message: '[ERROR-HANDLER] {"message":"invalid or missing params","params":{}}',
+  label: 'node-js',
+  timestamp: 'Fri, 02 Jul 2021 17:27:14 GMT'
+}
+{
+  service: 'nodejs-service',
+  level: 'error',
+  message: '[ERROR-HANDLER] {"message":"invalid or missing params","params":{}}',
+  label: 'node-js',
+  timestamp: 'Fri, 02 Jul 2021 17:28:06 GMT'
+}
+{
+  service: 'nodejs-service',
+  level: 'error',
+  message: '[ERROR-HANDLER] {"message":"invalid or missing params","params":{}}',
+  label: 'node-js',
+  timestamp: 'Fri, 02 Jul 2021 17:28:48 GMT'
+}
+{
+  service: 'nodejs-service',
+  level: 'error',
+  message: '[ERROR-HANDLER] {"message":"invalid or missing params","params":{}}',
+  label: 'node-js',
+  timestamp: 'Fri, 02 Jul 2021 17:29:22 GMT'
+}
+{
+  service: 'nodejs-service',
+  level: 'error',
+  message: '[ERROR-HANDLER] {"message":"invalid or missing params","params":{}}',
+  label: 'node-js',
+  timestamp: 'Fri, 02 Jul 2021 17:31:03 GMT'
+}
+{
+  service: 'nodejs-service',
+  level: 'error',
+  message: '[ERROR-HANDLER] {"message":"invalid or missing params","params":{}}',
+  label: 'node-js',
+  timestamp: 'Fri, 02 Jul 2021 17:31:32 GMT'
+}

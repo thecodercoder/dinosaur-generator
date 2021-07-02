@@ -13,7 +13,7 @@ body {
 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
-	background: center / cover url('/eutah-mizushima-OWwK_0_EnxY-unsplash.jpg');
+	background: center / cover url('/background.jpg');
 	color: hsl(0, 0%, 6%);
 	font-family: Arial, Helvetica, sans-serif;
 }

@@ -1,40 +1,43 @@
 console.log('script.js loaded');
 
-document.querySelector('#btnLoad').addEventListener('click', () => {
-	if (document.querySelector('#dinoName') !== null) {
-		document.querySelector('#dinoName').remove();
-	}
-	if (document.querySelector('#dinoImage') !== null) {
-		document.querySelector('#dinoImage').remove();
-	}
-	getDinoName();
+const wrapperEl = document.querySelector('#dinoWrapper')
+const BASE_API_URL = './api/dino'
+
+document.querySelector('#btnLoad').addEventListener('click', async () => {
+	wrapperEl.innerHTML = ""
+	render();
 });
 
-async function getDinoName() {
-	const response = await fetch('/dinoname');
-	const data = await response.json();
-	let dinoName = data[0].join(' ');
+async function render() {
+	const nameArr = await _fetchData(BASE_API_URL + '/name?words=2&paragraphs=1');
+	const dinoName = nameArr.join(' ');
 	console.log(dinoName);
 
-	let dinoNameDiv = document.createElement('div');
-	dinoNameDiv.id = 'dinoName';
-	dinoNameDiv.textContent = dinoName;
-	document.querySelector('#dinoWrapper').appendChild(dinoNameDiv);
+	const imageArr = await _fetchData(BASE_API_URL + '/image?count=1');
+	const imageUrl = imageArr[0]
+	const imageAlt = imageUrl.split('/')[imageUrl.length - 1]
 
-	getDinoImage();
+	var img = new Image();
+	img.onload = function () {
+		const dinoNameDiv = `<div id="dinoName">${dinoName}</div>`;
+		wrapperEl.insertAdjacentHTML('beforeend', dinoNameDiv);
+
+		const dinoImageEl = `<img id="dinoImage" src="${imageUrl}" alt="${imageAlt}"/>`;
+		wrapperEl.insertAdjacentHTML('beforeend', dinoImageEl);
+	}
+	img.src = imageUrl;
 }
 
-async function getDinoImage() {
-	const response = await fetch('/dinoimage');
-	const data = await response.json();
-	let dinoImage = data.value[Math.floor(Math.random() * data.value.length)];
-	let dinoImageUrl = dinoImage.thumbnailUrl;
-	let dinoAlt = dinoImage.name;
-	console.log(dinoImage);
+async function _fetchData(url) {
+	try {
+		const response = await fetch(url);
+		const { status, statusText } = response
+		const data = await response.json();
+		if (status > 200) throw { error: true, url, status, statusText, data };
 
-	let img = document.createElement('img');
-	img.id = 'dinoImage';
-	img.src = dinoImageUrl;
-	img.alt = dinoAlt;
-	document.querySelector('#dinoWrapper').appendChild(img);
+		return data;
+	} catch (error) {
+		console.error("🚀 ~ file: script.js ~ line 48 ~ _fetchData ~ error", error)
+		return null
+	}
 }
